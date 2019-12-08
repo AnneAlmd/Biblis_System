@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cadastro de livros</title>        
+        <link rel ="stylesheet" type = "text/css" href="css/cadastro.css"/>
+    </h:head>
+    <h:body>
+        
+         <div class="login-case">
+            <div class="login-box">
+                <h1 style="color:#331F00;">Cadastro de livros</h1>
+
+                <h:form>
+
+                    <h:panelGrid columns="2" columnClasses="label, value">
+                        <h:outputText value="Título:" />
+                        <p:inputText value="#{livroBean.livro.titulo}" label="Título"/>
+                        
+                        <h:outputText value="Gênero: " />
+                        <p:selectOneMenu value="#{livroBean.livro.genero}" style="width:230px">
+                            <f:selectItem itemLabel="Selecione o Gênero" itemValue="" />
+                            <f:selectItem itemValue="Humor" itemLabel="Humor"/>
+                            <f:selectItem itemValue="Romance Policial" itemLabel="Romance Policial" />
+                            <f:selectItem itemValue="Biografia" itemLabel="Biografia" />
+                            <f:selectItem itemValue="Economia" itemLabel="Economia" />
+                            <f:selectItem itemValue="Informatica" itemLabel="Informática" />
+                            <f:selectItem itemValue="Infantil" itemLabel="Infantil" />
+                            <f:selectItem itemValue="Auto-ajuda" itemLabel="Auto-ajuda" />
+                            <f:selectItem itemValue="Poesia" itemLabel="Poesia" />
+                            <f:selectItem itemValue="Politica" itemLabel="Política" />
+                            <f:selectItem itemValue="Filosofia" itemLabel="Filosofia" />
+                        </p:selectOneMenu>
+
+                        <h:outputText value="Autor: " />
+                        <p:inputText value="#{livroBean.livro.autor}" label="Autor"/>                        
+                        
+                        <h:outputText value="Sinopse: " />
+                        <p:inputText value="#{livroBean.livro.sinopse}" />
+                        
+                    </h:panelGrid>
+
+                    <div class="btn">
+                        <i class="fas fa-angle-double-left"></i>
+                        <h:commandButton action="#{livroBean.createLivro()}" value="Cadastrar"/>   
+                    </div>
+                </h:form>                    
+
+            </div>
+        </div>
+        
+        
+    </h:body>
+</html>
