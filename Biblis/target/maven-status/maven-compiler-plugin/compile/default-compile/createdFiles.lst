@@ -1,0 +1,9 @@
+com/anne/biblis/entity/Livro.class
+com/anne/biblis/bean/UsuarioBean.class
+com/anne/biblis/ejb/UsuarioEJB.class
+com/anne/biblis/entity/Usuario.class
+com/anne/biblis/util/Crypto.class
+com/anne/biblis/ejb/UsuarioFacadeLocal.class
+com/anne/biblis/ejb/AbstractFacadeLocal.class
+com/anne/biblis/entity/Usuario_.class
+com/anne/biblis/entity/Livro_.class

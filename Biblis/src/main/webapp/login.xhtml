@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Sistema Biblis</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              rel="stylesheet" id="bootstrap-css"></link>
+        <link rel ="stylesheet" type = "text/css" href="css/login.css"/>
+        <!-- <h:outputStylesheet library="css" name="css/login.css"/> -->
+
+    </h:head>
+    <h:body>
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <div class="sidenav">
+            <div class="login-main-text">
+                <h1>BIBLIS<br></br>System</h1>
+                <p/>
+                <h4>Reservatório de conhecimento.</h4>
+            </div>
+        </div>
+        <div class="main">
+            <div class="col-md-6 col-sm-12">
+                <div class="login-form">
+                    <form method="post" action="j_security_check">
+                        <div class="form-group">
+                            <label>Matrícula</label>
+                            <input type="text" class="form-control" placeholder="Matricula" name="j_username"
+                                   ></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input type="password" class="form-control" placeholder="Senha" name="j_password"></input>
+                        </div>
+                        <button type="submit" formaction= "/index" class="btn btn-black">Entrar</button>
+                        <button type="submit" formaction= "cadastro.xhtml" class="btn btn-secondary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        
+    </h:body>
+</html>
+

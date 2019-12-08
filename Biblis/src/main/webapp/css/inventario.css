@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 3, 2019, 1:47:04 PM
+    Author     : anne
+*/
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body{
+    margin: 50px;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #F4EED8;
+    
+}
+
+.titulo{
+    color: #CC0A0A;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1em; 
+    
+}
+
+.titulo fas fa-podcast{
+    color:#331F00;
+    font-size: 50px;
+}
+
+.ui-datatable-header:hover{
+    background: lightgreen;
+    
+}
+.ui-datatable tr.ui-datatable-even:hover, .ui-datatable tr.ui-datatable-odd:hover 
+{
+    background: lightcoral;
+}
+    
+.ui-datatable-even {
+    background-color: #F2EAD0;
+    
+}	
+.ui-datatable-odd{
+    background-color: whitesmoke;
+}	
