@@ -27,10 +27,6 @@ and open the template in the editor.
             <p:dataTable value="#{usuarioBean.usuarios}"
                          var="user"
                          rowKey="#{user.id}">
-               
-                <p:column headerText="Id" sortBy="#{user.id}" style="text-align: center; width: 3em;">
-                    <h:outputText value="#{user.id}" />
-                </p:column>
 
                 <p:column headerText="Nome" sortBy="#{user.nome}" style="text-align: center; width: 12em;">
                     <h:outputText value="#{user.nome}"/>

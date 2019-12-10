@@ -8,7 +8,7 @@
       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
     <h:head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Index_ADM</title>        
+        <title>Painel de administração</title>        
         <link rel ="stylesheet" type = "text/css" href="css/primeira.css"/>
     </h:head>
     <h:body>
@@ -16,7 +16,7 @@
         <div class="login-case">
 
             <h1 style = "color:blue;" >Administrador</h1>
-            <h3><i class="fab fa-angellist"></i>Anne Almeida</h3>
+            <h3>#{usuarioBean.usuario.nome}</h3>
 
             <h:form>
 
@@ -29,11 +29,11 @@
                 </div>
 
                 <div class="btn">
-                    <h:commandButton action="inventario" value="Listar usuários" />
+                    <h:commandButton action="listar_usuarios" value="Listar usuários" />
                 </div>
 
                 <div class="btn">
-                    <h:commandButton action="inventario" value="Inventário" />
+                    <h:commandButton action="listar_livros" value="Inventário" />
                 </div>
 
 
