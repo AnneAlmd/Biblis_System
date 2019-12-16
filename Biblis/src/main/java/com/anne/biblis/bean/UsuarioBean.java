@@ -61,6 +61,7 @@ public class UsuarioBean implements Serializable {
         usuarioEJB.create(usuario);
         clear();
         return "inventario.xhtml?faces-redirect=true";
+        //return "listar_usuarios.xhtml?faces-redirect=true";
     }
 
     public List<Usuario> findAllUsuario() {

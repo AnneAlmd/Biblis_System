@@ -11,34 +11,49 @@
         <title>Painel de administração</title>        
         <link rel ="stylesheet" type = "text/css" href="css/primeira.css"/>
     </h:head>
+    
+    <h:form>  
+            <p:growl id="messages"/>
+
+            <p:menubar>
+                <p:menuitem value="Página inicial" url="#"/>
+                
+                <p:submenu label="Empréstimos">
+                    <p:menuitem value="Novo empréstimo" url="#" />
+                    <p:separator />
+                    <p:menuitem value="Meus empréstimos" url="#" />
+                </p:submenu>
+                
+                <p:submenu label="Livros">
+                    <p:menuitem value="Listar livros" action="listar_livros" />
+                    <p:separator />
+                    <p:menuitem value="Cadastrar livro" action="cadastro_livro" />
+                </p:submenu>
+                
+                <p:submenu label="Usuários">
+                    <p:menuitem value="Listar usuários" action="listar_usuarios" />
+                    <p:separator />
+                    <p:menuitem value="Cadastrar usuário" action="cadastro_usuario" />
+                </p:submenu>
+
+                <p:menuitem value="Ajuda" url=""/>
+
+
+                 <p:submenu label="#{usuarioBean.usuario.nome}">
+                    <p:menuitem value="Minha conta" url="#" />
+                    <p:separator />
+                    <p:menuitem value="Sair" url="#" />
+                </p:submenu>
+                
+            </p:menubar>
+        </h:form>
+    
     <h:body>
 
         <div class="login-case">
 
             <h1 style = "color:blue;" >Administrador</h1>
             <h3>#{usuarioBean.usuario.nome}</h3>
-
-            <h:form>
-
-                <div class="btn">
-                    <h:commandButton action="cadastro_livro" value="Cadastrar Livro" />
-                </div>
-
-                <div class="btn">
-                    <h:commandButton action="inventario" value="Consulta Livro" />
-                </div>
-
-                <div class="btn">
-                    <h:commandButton action="listar_usuarios" value="Listar usuários" />
-                </div>
-
-                <div class="btn">
-                    <h:commandButton action="listar_livros" value="Inventário" />
-                </div>
-
-
-            </h:form>                    
-
 
         </div>
 

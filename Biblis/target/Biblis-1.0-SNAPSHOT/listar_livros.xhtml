@@ -10,6 +10,43 @@
     </h:head>
     <h:body>
         
+        <h:form>  
+            <p:growl id="messages"/>
+
+            <p:menubar>
+                <p:menuitem value="Página inicial" url="#"/>
+                
+                <p:submenu label="Empréstimos">
+                    <p:menuitem value="Novo empréstimo" url="#" />
+                    <p:separator />
+                    <p:menuitem value="Meus empréstimos" url="#" />
+                </p:submenu>
+                
+                <p:submenu label="Livros">
+                    <p:menuitem value="Listar livros" action="listar_livros" />
+                    <p:separator />
+                    <p:menuitem value="Cadastrar livro" action="cadastro_livro" />
+                </p:submenu>
+                
+                <p:submenu label="Usuários">
+                    <p:menuitem value="Listar usuários" action="listar_usuarios" />
+                    <p:separator />
+                    <p:menuitem value="Cadastrar usuário" action="cadastro_usuario" />
+                </p:submenu>
+
+                <p:menuitem value="Ajuda" url=""/>
+
+
+                 <p:submenu label="#{usuarioBean.usuario.nome}">
+                    <p:menuitem value="Minha conta" url="#" />
+                    <p:separator />
+                    <p:menuitem value="Sair" url="#" />
+                </p:submenu>
+                
+            </p:menubar>
+        </h:form>
+        
+        
         <div class="titulo">
             <h2><i class="fas fa-podcast"></i>Livros</h2> 
         </div>

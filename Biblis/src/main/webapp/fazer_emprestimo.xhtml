@@ -21,15 +21,21 @@
                 </p:submenu>
                 
                 <p:submenu label="Livros">
-                    <p:menuitem value="Listar livros" action="listar_usuarios" />
+                    <p:menuitem value="Listar livros" action="listar_livros" />
                     <p:separator />
-                    <p:menuitem value="Meus empréstimos" url="#" />
+                    <p:menuitem value="Cadastrar livro" action="cadastro_livro" />
+                </p:submenu>
+                
+                <p:submenu label="Usuários">
+                    <p:menuitem value="Listar usuários" action="listar_usuarios" />
+                    <p:separator />
+                    <p:menuitem value="Cadastrar usuário" action="cadastro_usuario" />
                 </p:submenu>
 
                 <p:menuitem value="Ajuda" url=""/>
 
 
-                 <p:submenu label="{usuarioBean.usuario.nome}">
+                 <p:submenu label="#{usuarioBean.usuario.nome}">
                     <p:menuitem value="Minha conta" url="#" />
                     <p:separator />
                     <p:menuitem value="Sair" url="#" />
